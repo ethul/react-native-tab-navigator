@@ -11,7 +11,7 @@ import {
   View,
 } from 'react-native';
 
-import ViewPropTypes from './config/ViewPropTypes';
+import {ViewPropTypes, TextPropTypes} from 'deprecated-react-native-prop-types';
 import Layout from './Layout';
 
 export default class Tab extends React.Component {
@@ -20,7 +20,7 @@ export default class Tab extends React.Component {
     accessible: PropTypes.bool,
     accessibilityLabel : PropTypes.string,
     title: PropTypes.string,
-    titleStyle: Text.propTypes.style,
+    titleStyle: TextPropTypes.style,
     badge: PropTypes.element,
     onPress: PropTypes.func,
     hidesTabTouch: PropTypes.bool,

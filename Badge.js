@@ -6,10 +6,12 @@ import {
   Text,
 } from 'react-native';
 
+import {TextPropTypes} from 'deprecated-react-native-prop-types';
+
 import Layout from './Layout';
 
 export default class Badge extends React.Component {
-  static propTypes = Text.propTypes;
+  static propTypes = TextPropTypes;
 
   constructor(props, context) {
     super(props, context);

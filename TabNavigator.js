@@ -14,7 +14,7 @@ import StaticContainer from './StaticContainer';
 import Tab from './Tab';
 import TabBar from './TabBar';
 import TabNavigatorItem from './TabNavigatorItem';
-import ViewPropTypes from './config/ViewPropTypes';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 
 export default class TabNavigator extends React.Component {
   static propTypes = {

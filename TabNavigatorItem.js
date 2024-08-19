@@ -7,7 +7,7 @@ import {
   View,
 } from 'react-native';
 
-import ViewPropTypes from './config/ViewPropTypes';
+import {ViewPropTypes, TextPropTypes} from 'deprecated-react-native-prop-types';
 
 export default class TabNavigatorItem extends React.Component {
   static propTypes = {
@@ -16,8 +16,8 @@ export default class TabNavigatorItem extends React.Component {
     badgeText: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     renderBadge: PropTypes.func,
     title: PropTypes.string,
-    titleStyle: Text.propTypes.style,
-    selectedTitleStyle: Text.propTypes.style,
+    titleStyle: TextPropTypes.style,
+    selectedTitleStyle: TextPropTypes.style,
     tabStyle: ViewPropTypes.style,
     selected: PropTypes.bool,
     onPress: PropTypes.func,
